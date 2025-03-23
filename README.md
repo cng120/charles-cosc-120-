@@ -85,3 +85,66 @@ Ensure that all inputs are valid numbers.
 If an invalid option is selected, the program will prompt the user to choose again.
 License
 This program is provided as-is for educational purposes. Feel free to modify and use it as needed.
+
+
+
+# Number List Generator and Display
+
+This Python script generates and displays two lists of numbers:
+1. A list of negative numbers between -100 and 0.
+2. A list of odd numbers between 1 and 100.
+
+The script is structured into three functions:
+- `find_negative_numbers()`
+- `find_odd_numbers()`
+- `display_combined_lists()`
+
+## Features
+
+1. **Generate Negative Numbers**  
+   The `find_negative_numbers()` function creates a list of all integers from -100 to -1 using Python's `range()` function.
+
+2. **Generate Odd Numbers**  
+   The `find_odd_numbers()` function generates a list of odd integers between 1 and 100 by filtering numbers using the modulus operator (`%`).
+
+3. **Display Combined Lists**  
+   The `display_combined_lists()` function calls the above two functions to generate the lists and then prints them to the console.
+
+## Code Overview
+
+### `find_negative_numbers()`
+This function generates a list of negative numbers between -100 and 0:
+```python
+def find_negative_numbers():
+    negative_numbers = [i for i in range(-100, 0)]
+    return negative_numbers
+find_odd_numbers()
+This function generates a list of odd numbers between 1 and 100:
+def display_combined_lists():
+    negative_numbers = find_negative_numbers()
+    odd_numbers = find_odd_numbers()
+    print("Negative numbers between -100 and 0:")
+    print(negative_numbers)
+    print("Odd numbers between 0 and 100:")
+    print(odd_numbers)
+Main Execution
+The script calls the display_combined_lists() function to display the results:
+
+
+display_combined_lists()
+How to Run
+Save the script to a file, e.g., number_list_generator.py.
+Run the script using Python:
+python number_list_generator.py
+Example Output
+When you run the script, you will see the following output:
+Negative numbers between -100 and 0:
+[-100, -99, -98, ..., -2, -1]
+Odd numbers between 0 and 100:
+[1, 3, 5, ..., 97, 99]
+Requirements
+Python 3.x
+Notes
+The script uses list comprehensions for concise and efficient list generation.
+The range() function is used to define the range of numbers for both negative and odd lists.
+Feel free to modify the script to generate other ranges or types of numbers! ```
