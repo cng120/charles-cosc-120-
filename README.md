@@ -115,23 +115,6 @@ The script is structured into three functions:
 ### `find_negative_numbers()`
 This function generates a list of negative numbers between -100 and 0:
 ```python
-def find_negative_numbers():
-    negative_numbers = [i for i in range(-100, 0)]
-    return negative_numbers
-find_odd_numbers()
-This function generates a list of odd numbers between 1 and 100:
-def display_combined_lists():
-    negative_numbers = find_negative_numbers()
-    odd_numbers = find_odd_numbers()
-    print("Negative numbers between -100 and 0:")
-    print(negative_numbers)
-    print("Odd numbers between 0 and 100:")
-    print(odd_numbers)
-Main Execution
-The script calls the display_combined_lists() function to display the results:
-
-
-display_combined_lists()
 How to Run
 Save the script to a file, e.g., number_list_generator.py.
 Run the script using Python:
