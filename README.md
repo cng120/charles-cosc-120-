@@ -147,4 +147,68 @@ Python 3.x
 Notes
 The script uses list comprehensions for concise and efficient list generation.
 The range() function is used to define the range of numbers for both negative and odd lists.
-Feel free to modify the script to generate other ranges or types of numbers! ```
+Feel free to modify the script to generate other ranges or types of numbers! ``
+
+
+
+# Largest and Smallest Number Finder
+
+This Python script allows users to input a list of numbers and determines the largest and smallest numbers in the list using built-in Python functions.
+
+## Features
+
+1. **User Input**  
+   The script prompts the user to enter a list of numbers separated by spaces.
+
+2. **Find Largest and Smallest Numbers**  
+   The script uses the `max()` and `min()` functions to find the largest and smallest numbers in the list.
+
+3. **Error Handling**  
+   If the user provides an empty list, the script will notify the user and prompt them to enter at least one number.
+
+## Code Overview
+
+### `find_largest_and_smallest(numbers)`
+This function takes a list of numbers as input and returns the largest and smallest numbers:
+```python
+def find_largest_and_smallest(numbers):
+    largest = max(numbers)
+    smallest = min(numbers)
+    return largest, smallest
+Main Execution
+The script prompts the user to enter a list of numbers:
+user_input = input("Enter a list of numbers separated by spaces: ")
+It converts the input string into a list of integers:
+numbers = [int(num) for num in user_input.split()]
+If the list is empty, it displays an error message:
+if len(numbers) == 0:
+    print("The list is empty. Please enter at least one number.")
+Otherwise, it finds and displays the largest and smallest numbers:
+largest, smallest = find_largest_and_smallest(numbers)
+print("Largest number:", largest)
+print("Smallest number:", smallest)
+How to Run
+Save the script to a file, e.g., largest_smallest_finder.py.
+
+Run the script using Python:
+python largest_smallest_finder.py
+
+Enter a list of numbers separated by spaces when prompted.
+
+Example Usage
+Input:
+Enter a list of numbers separated by spaces: 10 20 5 30 15
+Output:
+Largest number: 30
+Smallest number: 5
+nput (Empty List):
+Enter a list of numbers separated by spaces: 
+Output:
+The list is empty. Please enter at least one number.
+Requirements
+Python 3.x
+Notes
+The script uses list comprehensions to convert the user input into a list of integers.
+The max() and min() functions are used for efficient computation of the largest and smallest numbers.
+Ensure that the input consists of valid integers separated by spaces to avoid errors.
+Feel free to modify the script to handle additional features, such as sorting the list or finding other statistics! ``
